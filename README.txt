@@ -28,18 +28,18 @@ http://twitter.com/hal_sk  (ja)
 ## QUICK START
 
    require 'geohex'
-   GeoHex.encode(35.647401,139.716911,1)
+   GeoHex::Zone.encode(35.647401,139.716911,1)
    => '132KpuG' 
-   GeoHex.decode('0dMV')
+   GeoHex::Zone.decode('0dMV')
    => [24.338279000000004,124.1577708779443,7]
 
 ## FEATURES
 
    require 'geohex'
-   geohex = GeoHex.new(35.647401,139.716911,1)
+   geohex = GeoHex::Zone.new(35.647401,139.716911,1)
    geohex.code
    => '132KpuG' 
-   geohex = GeoHex.decode('0dMV')
+   geohex = GeoHex::Zone.decode('0dMV')
    geohex.lat
    => 24.338279000000004
 
